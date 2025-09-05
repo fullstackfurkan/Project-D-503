@@ -1,0 +1,49 @@
+/** FONTS 
+
+.changa-<uniquifier> {
+  font-family: "Changa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.open-sans-<uniquifier> {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+**/
+
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+// VARIABLES
+
+$primary-font: "Changa", sans-serif;
+$secondary-font: "Open Sans", sans-serif;
+$primary-color: #E51515;
+$secondary-color: #14151A;
+$date-color: #FFB320;
+$comment-color: #08ABBD;
+$gray-color: #9F9F9F;
+$light-color: #FEFEFE;
+
+// UTILITIES
+
+.bg {
+  &-dark {
+    background-color: $secondary-color;
+  }
+
+  &-light {
+    background-color: $light-color;
+  }
+}
+
+.ml {
+  &-2 {
+    margin-left: 2rem;
+  }
+}
