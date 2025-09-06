@@ -1,3 +1,5 @@
+@import 'mixin';
+
 .btn {
     background-color: $light-color;
     color: $primary-color;
@@ -24,3 +26,49 @@
         }
     }
 }
+
+.latest-news {
+    display: flex;
+    background-color: $primary-color;
+    height: 8rem;
+    align-items: center;
+    
+    &-title {
+        flex-basis: 25%;
+        text-align: right;
+        padding-right: 2rem;
+    }
+
+    &-content {
+        flex-basis: 75%;
+        background-color: $secondary-color;
+        height: 100%;
+
+        .marquee {
+            width: 100%;
+            overflow: hidden;
+            // white-space: nowrap;
+
+            .news-ticker {
+                @include flex-display(flex, center, space-between);
+                line-height: 8rem;
+                animation: slide 15s linear infinite;
+
+                p {
+                color: $light-color;
+                font-size: 1.4rem;
+                margin-right: 25px;
+                }
+            }          
+        }
+}
+
+@keyframes slide {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+    }
