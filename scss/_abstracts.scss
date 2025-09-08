@@ -47,3 +47,15 @@ $light-color: #FEFEFE;
     margin-left: 2rem;
   }
 }
+
+.text-light {
+  color: $light-color;
+}
+
+.text-primary {
+  color: $primary-color;
+}
+
+.text-center {
+  text-align: center;
+}
