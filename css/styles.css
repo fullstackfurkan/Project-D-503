@@ -408,6 +408,9 @@ img {
 .recent-games-content .recent-game-content {
   padding: 2rem;
 }
+.recent-games-content .recent-game-content .game-title {
+  margin-bottom: 2rem;
+}
 .recent-games-content .recent-game-content p {
   font-size: 1.3rem;
   line-height: 1.8;
